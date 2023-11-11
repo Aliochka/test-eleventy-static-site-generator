@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My blog - {{title}}</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Collection 1</a></li>
+      <li><a href="#">Collection 2</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>{{title | default: "My blog"}}</h1>
+  </header>
+  <main>
+    {{ content | default: "Oupsy, il n'y pas de contenu !"}}
+  </main>
+</body>
+
+</html>
